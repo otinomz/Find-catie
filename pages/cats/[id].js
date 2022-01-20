@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import React from 'react';
 import DefaultLayout from "../../layouts/Default";
 import Head from "next/head"
+import styles from "./index.module.css"
 
 export default function Cat() {
     const [cat, setCat]= useState(null)
@@ -20,6 +21,7 @@ export default function Cat() {
         fetchCat()
     }, [])
 
+
     return (
         <>
                
@@ -36,10 +38,7 @@ export default function Cat() {
                             </Head> 
                         
 
-                            <div 
-                                className= "container mt-5"
-                                style={{display: 'flex'}}
-                            >
+                            <div className= {styles["cat-container"]}>
                                 <img style={{width: '30%', height: '30%'}} src={cat.image.url} alt={cat.image.alt} />
                                 <div className="mx-5">
                                     <h1>{cat.name}</h1>

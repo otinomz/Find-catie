@@ -2,6 +2,7 @@ import {useEffect, useState} from "react"
 import { useRouter } from 'next/router';
 import React from 'react';
 import Nav from "../../components/Nav/Nav";
+import Default from "../../layouts/Default";
 
 export default function Cat() {
     const [cat, setCat]= useState(null)
@@ -21,22 +22,23 @@ export default function Cat() {
 
     return (
         <> 
-            <Nav/>
-            {/*rendering cat infor mation for specific cat in mind */}
-            <div>
-                {cat && (
-                    <div 
-                        className= "container mt-5"
-                        style={{display: 'flex'}}
-                    >
-                        <img style={{width: '30%', height: '30%'}} src={cat.image.url} alt={cat.image.alt} />
-                        <div className="mx-5">
-                            <h1>{cat.name}</h1>
-                            <p>{cat.description}</p>
+            <Default>
+                {/*rendering cat infor mation for specific cat in mind */}
+                <div>
+                    {cat && (
+                        <div 
+                            className= "container mt-5"
+                            style={{display: 'flex'}}
+                        >
+                            <img style={{width: '30%', height: '30%'}} src={cat.image.url} alt={cat.image.alt} />
+                            <div className="mx-5">
+                                <h1>{cat.name}</h1>
+                                <p>{cat.description}</p>
+                            </div>
                         </div>
-                    </div>
-                )}
-            </div>
+                    )}
+                </div>
+            </Default>
         </>    
     ) 
 }

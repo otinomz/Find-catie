@@ -21,7 +21,15 @@ export default function Cat() {
     return (
         // rendering cat information for specific cat in mind
         <div>
-            
+            {cat && (
+                <div className="mt-5 flex">
+                    <img src={cat.image.url} alt={cat.image.alt} />
+                    <div className="mx-5">
+                        <h1>{cat.name}</h1>
+                        <p>{cat.description}</p>
+                    </div>
+                </div>
+            )}
         </div>
         
     ) 

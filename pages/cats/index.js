@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Nav from '../../components/Nav/Nav';
+import Card from '../../components/Card/Card'
 
 export default function Cats() {
     
@@ -18,7 +19,11 @@ export default function Cats() {
 
     return (
         <div>
-            <Nav />      
+            <Nav />
+            
+            {cats.map(cat => (
+                <Card />
+            ))}
         </div>
     )
 }

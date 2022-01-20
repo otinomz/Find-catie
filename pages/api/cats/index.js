@@ -5,4 +5,4 @@ export default function handler(req, res) {
   res.status(200).json(cats)
 }
 
- 
+//  http: localhost:3000/api/cats/4

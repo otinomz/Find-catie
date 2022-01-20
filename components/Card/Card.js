@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./Card.module.css"
-import useRouter from 'next/router';
+import {useRouter} from 'next/router';
 
 export default function Card({id, name, phone, email, image}) {
     const router = useRouter()

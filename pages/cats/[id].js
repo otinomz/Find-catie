@@ -1,8 +1,10 @@
+import {useState} from "react"
 import { useRouter } from 'next/router';
 import React from 'react';
 
 export default function Cat() {
-
+    const [cat, setCat]= useState(null)
+    
     const router = useRouter()
     const {id} = router.query
 

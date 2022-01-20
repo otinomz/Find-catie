@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Jumbotron from '../components/Jumbotron/Jumbotron'
 import Nav from '../components/Nav/Nav'
-import Default from '../layouts/Default'
+import DefaultLayout from '../layouts/Default'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -14,9 +14,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-        <Default>
+        {/* default layout  */}
+        <DefaultLayout>
           <Jumbotron/>
-        </Default>
+        </DefaultLayout>
         
     </div>
   )

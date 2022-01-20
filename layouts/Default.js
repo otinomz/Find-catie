@@ -1,9 +1,13 @@
 import React from 'react';
+import Nav from '../components/Nav/Nav';
 
-export default function Default() {
+export default function Default({children}) {
     return (
         <div>
-      
+            <Nav />
+            <main>
+                {children}
+            </main>
         </div>
     )
 }

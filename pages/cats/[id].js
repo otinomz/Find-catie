@@ -1,4 +1,4 @@
-import {useState} from "react"
+import {useEffect, useState} from "react"
 import { useRouter } from 'next/router';
 import React from 'react';
 
@@ -11,9 +11,12 @@ export default function Cat() {
     const fetchCat = async () => {
         const response = await fetch(`/api/cats/${id}`)
         const data = await response.json()
+        setCat(data)
     }
 
-
+    useEffect(() => {
+        fetchCat()
+    }, [])
 
     return (
         // rendering cat information for specific cat in mind

@@ -1,7 +1,6 @@
 import {useEffect, useState} from "react"
 import { useRouter } from 'next/router';
 import React from 'react';
-import Nav from "../../components/Nav/Nav";
 import DefaultLayout from "../../layouts/Default";
 import Head from "next/head"
 
@@ -23,25 +22,30 @@ export default function Cat() {
 
     return (
         <>
-            <Head>
-                <title>Cats info</title>
-                <meta name="description" content="know your dream cat today" />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>    
+               
             <DefaultLayout>
                 {/*rendering cat infor mation for specific cat in mind */}
                 <div>
                     {cat && (
-                        <div 
-                            className= "container mt-5"
-                            style={{display: 'flex'}}
-                        >
-                            <img style={{width: '30%', height: '30%'}} src={cat.image.url} alt={cat.image.alt} />
-                            <div className="mx-5">
-                                <h1>{cat.name}</h1>
-                                <p>{cat.description}</p>
+                        <>
+                            <Head>
+                                <title>{cat.name}</title>
+                                <meta name="description" content="know your dream cat today" />
+                                <link rel="icon" href="/favicon.ico" />
+                            </Head> 
+                        
+
+                            <div 
+                                className= "container mt-5"
+                                style={{display: 'flex'}}
+                            >
+                                <img style={{width: '30%', height: '30%'}} src={cat.image.url} alt={cat.image.alt} />
+                                <div className="mx-5">
+                                    <h1>{cat.name}</h1>
+                                    <p>{cat.description}</p>
+                                </div>
                             </div>
-                        </div>
+                        </>
                     )}
                 </div>
             </DefaultLayout>

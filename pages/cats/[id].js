@@ -25,7 +25,10 @@ export default function Cat() {
             {/*rendering cat information for specific cat in mind */}
             <div>
                 {cat && (
-                    <div className="container mt-5 flex">
+                    <div 
+                        className="container mt-5"
+                        style={{display: 'flex'}}
+                    >
                         <img src={cat.image.url} alt={cat.image.alt} />
                         <div className="mx-5">
                             <h1>{cat.name}</h1>

@@ -1,4 +1,5 @@
-import React, {useEffect, useState} from 'react';
+import Head from "next/head"
+import React, { useEffect, useState } from 'react';
 import Nav from '../../components/Nav/Nav';
 import Card from '../../components/Card/Card'
 import styles from './index.module.css'
@@ -21,6 +22,11 @@ export default function Cats() {
 
     return (
         <>
+            <Head>
+                <title>Nalaa World</title>
+                <meta name="description" content="find your dream cat today" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <Default>
                 <div className="container mt-5" >  
                 <div className={styles["card-container"]}>

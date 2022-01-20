@@ -25,7 +25,7 @@ export default function Cat() {
         <>
             <Head>
                 <title>Cats info</title>
-                <meta name="description" content="find your dream cat today" />
+                <meta name="description" content="know your dream cat today" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>    
             <DefaultLayout>

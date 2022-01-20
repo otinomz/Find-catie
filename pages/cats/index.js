@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import Nav from '../../components/Nav/Nav';
 import Card from '../../components/Card/Card'
+import styles from './index.module.css'
 
 export default function Cats() {
     
@@ -18,10 +19,12 @@ export default function Cats() {
     }, [])
 
     return (
-        <div>
+        <>
+    
             <Nav />
+            <div >
             
-            <div className="card__container">
+            {/* <div className={styles["card-container"]}> */}
                 {cats.map(cat => (
                     <Card
                         key={cat.id}
@@ -32,8 +35,9 @@ export default function Cats() {
                         image={cat.image}
                     />
                 ))}
-            </div>
+            {/* </div> */}
             
-        </div>
+            </div>
+        </>
     )
 }

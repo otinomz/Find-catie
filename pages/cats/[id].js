@@ -2,7 +2,7 @@ import {useEffect, useState} from "react"
 import { useRouter } from 'next/router';
 import React from 'react';
 import Nav from "../../components/Nav/Nav";
-import Default from "../../layouts/Default";
+import DefaultLayout from "../../layouts/Default";
 
 export default function Cat() {
     const [cat, setCat]= useState(null)
@@ -22,7 +22,7 @@ export default function Cat() {
 
     return (
         <> 
-            <Default>
+            <DefaultLayout>
                 {/*rendering cat infor mation for specific cat in mind */}
                 <div>
                     {cat && (
@@ -38,7 +38,7 @@ export default function Cat() {
                         </div>
                     )}
                 </div>
-            </Default>
+            </DefaultLayout>
         </>    
     ) 
 }

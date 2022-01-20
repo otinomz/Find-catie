@@ -39,10 +39,10 @@ export default function Cat() {
                         
 
                             <div className= {styles["cat-container"]}>
-                                <img style={{width: '30%', height: '30%'}} src={cat.image.url} alt={cat.image.alt} />
+                                <img style={{width: '40%', height: '40%'}} src={cat.image.url} alt={cat.image.alt} />
                                 <div className="mx-5">
-                                    <h1>{cat.name}</h1>
-                                    <p>{cat.description}</p>
+                                    <h1 className={styles.top}>{cat.name}</h1>
+                                    <p className={styles.top}>{cat.description}</p>
                                 </div>
                             </div>
                         </>

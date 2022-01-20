@@ -8,8 +8,8 @@
 
 .cat-container{
     display: flex;
-    background: red;
-    margin: 20px 30px;
+    margin: 20px 0px;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -17,5 +17,10 @@
     .cat-container{
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
+    .top{
+        margin-top: 20px;
+    }
+
 }

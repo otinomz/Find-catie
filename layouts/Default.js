@@ -9,7 +9,6 @@ export default function Default({children}) {
             <main>
                 {children}
             </main>
-
         </div>
     )
 }

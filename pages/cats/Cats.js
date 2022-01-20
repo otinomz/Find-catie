@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import Nav from '../../components/Nav/Nav';
 
-export default function index() {
+export default function Cats() {
+    
     const [ cats, setCats ] = useState([])
 
     const fetchCats = async () => {

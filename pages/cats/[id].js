@@ -22,14 +22,14 @@ export default function Cat() {
     return (
         <> 
             <Nav/>
-            {/*rendering cat information for specific cat in mind */}
+            {/*rendering cat infor mation for specific cat in mind */}
             <div>
                 {cat && (
                     <div 
-                        className="container mt-5"
+                        className= "container mt-5"
                         style={{display: 'flex'}}
                     >
-                        <img src={cat.image.url} alt={cat.image.alt} />
+                        <img style={{width: '30%', height: '30%'}} src={cat.image.url} alt={cat.image.alt} />
                         <div className="mx-5">
                             <h1>{cat.name}</h1>
                             <p>{cat.description}</p>

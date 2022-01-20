@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import React from 'react';
 import Nav from "../../components/Nav/Nav";
 import DefaultLayout from "../../layouts/Default";
+import Head from "next/head"
 
 export default function Cat() {
     const [cat, setCat]= useState(null)
@@ -21,7 +22,12 @@ export default function Cat() {
     }, [])
 
     return (
-        <> 
+        <>
+            <Head>
+                <title>Cats info</title>
+                <meta name="description" content="find your dream cat today" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>    
             <DefaultLayout>
                 {/*rendering cat infor mation for specific cat in mind */}
                 <div>

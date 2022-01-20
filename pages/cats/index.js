@@ -23,8 +23,8 @@ export default function Cats() {
     return (
         <>
             <Head>
-                <title>Nalaa World</title>
-                <meta name="description" content="find your dream cat today" />
+                <title>Our Cats</title>
+                <meta name="description" content="see the dream cat of yours" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Default>

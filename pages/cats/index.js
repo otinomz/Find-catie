@@ -23,6 +23,7 @@ export default function Cats() {
             
             {cats.map(cat => (
                 <Card
+                    key={cat.id}
                     name={cat.name}
                     id={cat.id}
                     phone={cat.phone}

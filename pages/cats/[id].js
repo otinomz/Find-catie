@@ -28,6 +28,7 @@ export default function Cat() {
                 <div>
                     {cat && (
                         <>
+                            {/* rendering head tag dynamically */}
                             <Head>
                                 <title>{cat.name}</title>
                                 <meta name="description" content="know your dream cat today" />

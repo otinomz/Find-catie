@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Nav from '../../components/Nav/Nav';
 
 export default function Cats() {
@@ -10,6 +10,10 @@ export default function Cats() {
         const data = await response.json()
         setCats(data)
     }
+
+    useEffect(() => {
+        fetchCats()
+    }, [])
 
     return (
         <div>

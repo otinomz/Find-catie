@@ -7,8 +7,11 @@ export default function Cat() {
     const {id} = router.query
 
     const fetchCat = async () => {
-        const response = await fetch()
+        const response = await fetch(`/api/cats/${id}`)
+        const data = await response.json()
     }
+
+
 
 
     return (

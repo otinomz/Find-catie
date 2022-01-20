@@ -1,1 +1,1 @@
-#To learn the fundamentals of Next Js, I decided to build a simple web application to find catie
+#To learn the fundamentals of Next Js, I decided to build a simple web application to find cats

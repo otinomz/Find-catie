@@ -22,7 +22,13 @@ export default function Cats() {
             <Nav />
             
             {cats.map(cat => (
-                <Card />
+                <Card
+                    name={cat.name}
+                    id={cat.id}
+                    phone={cat.phone}
+                    email={cat.email}
+                    image={cat.image}
+                />
             ))}
         </div>
     )

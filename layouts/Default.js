@@ -5,7 +5,7 @@ export default function Default({children}) {
     return (
         <div>
             <Nav />
-            <p>Designed by Otinomo</p>
+            <p style={{marginLeft: "20px"}}>Designed by Otinomo</p>
             <main>
                 {children}
             </main>

@@ -8,6 +8,7 @@ export default function Cats() {
     const fetchCats = async () => {
         const response = await fetch('/api/cats')
         const data = await response.json()
+        console.log(data)
         setCats(data)
     }
 

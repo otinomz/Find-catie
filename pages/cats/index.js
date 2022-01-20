@@ -21,8 +21,8 @@ export default function Cats() {
     return (
         <>
             <Nav />
-            <div className="container" >  
-            {/* <div className={styles["card-container"]}> */}
+            <div className="container mt-5" >  
+            <div className={styles["card-container"]}>
                 {cats.map(cat => (
                     <Card
                         key={cat.id}
@@ -33,7 +33,7 @@ export default function Cats() {
                         image={cat.image}
                     />
                 ))}
-            {/* </div> */}
+            </div>
             
             </div>
         </>

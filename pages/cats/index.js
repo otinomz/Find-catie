@@ -20,10 +20,8 @@ export default function Cats() {
 
     return (
         <>
-    
             <Nav />
-            <div >
-            
+            <div className="container" >  
             {/* <div className={styles["card-container"]}> */}
                 {cats.map(cat => (
                     <Card
